@@ -56,3 +56,44 @@ Validasi Input:
 Memastikan jumlah ikan tidak melebihi batas maksimum (1000).
 Output Terstruktur:
 Menampilkan total berat ikan di setiap wadah dan rata-rata berat ikan secara rapi dengan dua angka desimal.
+
+*NOMOR 3*
+Deskripsi Program
+Program ini ditulis dalam bahasa Go (Golang) dan dirancang untuk mengolah data berat badan balita. Program mampu menghitung:
+Berat minimum.
+Berat maksimum.
+Rata-rata berat balita dari sejumlah data yang dimasukkan oleh pengguna.
+Penjelasan Fungsi dan Struktur
+Struktur Data arrBalita
+Tipe data ini didefinisikan sebagai array berukuran tetap yang dapat menyimpan hingga 100 data berat balita (float64).
+Fungsi hitungMinMax
+Fungsi ini bertugas mencari berat minimum dan maksimum dari array berat balita:
+Parameter:
+arrBerat: array berat balita.
+n: jumlah data balita.
+bMin dan bMax: pointer untuk menyimpan hasil berat minimum dan maksimum.
+Logika:
+Menginisialisasi nilai minimum (bMin) dan maksimum (bMax) dengan elemen pertama array.
+Melakukan iterasi untuk membandingkan setiap elemen array dengan nilai minimum dan maksimum saat ini, lalu memperbarui nilainya jika diperlukan.
+Fungsi rerata
+Fungsi ini bertugas menghitung rata-rata berat balita:
+Parameter:
+arrBerat: array berat balita.
+n: jumlah data balita.
+Logika:
+Menjumlahkan seluruh elemen array.
+Membagi total berat dengan jumlah data (n) untuk mendapatkan rata-rata.
+Fungsi main
+Meminta input jumlah balita (n) dari pengguna.
+Meminta input berat masing-masing balita.
+Memanggil fungsi hitungMinMax untuk mendapatkan berat minimum dan maksimum.
+Memanggil fungsi rerata untuk menghitung rata-rata berat.
+Menampilkan hasil berat minimum, maksimum, dan rata-rata.
+Fitur Program
+Input Data Berat Balita: Memungkinkan pengguna memasukkan hingga 100 data berat balita.
+Perhitungan Statistik:
+Berat minimum dan maksimum.
+Rata-rata berat balita.
+Validasi Data:
+Jika jumlah data (n) tidak valid atau array kosong, program memberikan pesan error.
+
